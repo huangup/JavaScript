@@ -1,0 +1,7 @@
+window.log(Date.parse('May 25, 2004'))
+window.log(new Date('May 25, 2004'))
+window.log(new Date('May 25, 2004'))
+window.log(new Date(Date.UTC(2000, 0)))
+window.log(new Date(Date.UTC(2005, 4, 5, 17, 55, 55, 500)))
+window.log(new Date(Date.now()))
+window.log(new Date(2007, 0, 1))

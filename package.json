@@ -1,0 +1,25 @@
+{
+  "name": "javascript",
+  "version": "1.0.0",
+  "description": "javascript exam",
+  "main": "ajax.js",
+  "scripts": {
+    "start": "node server.js",
+    "hotload": "supervisor server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/huangup/JavaScript.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/huangup/JavaScript/issues"
+  },
+  "homepage": "https://github.com/huangup/JavaScript#readme",
+  "devDependencies": {
+    "mime": "^2.2.0",
+    "opn": "^5.3.0"
+  },
+  "dependencies": {}
+}
