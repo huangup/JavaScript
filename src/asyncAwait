@@ -1,0 +1,16 @@
+let fetchData = function() {
+    return new Promise(function(resolve, reject) {
+        const data = { name: 'hnh' };
+        window.setTimeout(function() {
+            resolve(data);
+        }, 3000);
+    });
+};
+async function execute() {
+    // 同步执行
+    window.log('start..............');
+    const data = await fetchData();
+    window.log('data--------->', data);
+    window.log('end................');
+}
+execute();
