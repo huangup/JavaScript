@@ -1,6 +1,6 @@
-let fetchData = function() {
+let fetchData = function(txt) {
     return new Promise(function(resolve, reject) {
-        const data = { name: 'hnh' };
+        const data = { text: txt };
         window.setTimeout(function() {
             resolve(data);
         }, 3000);
@@ -8,9 +8,12 @@ let fetchData = function() {
 };
 async function execute() {
     // 同步执行
-    window.log('start..............');
-    const data = await fetchData();
-    window.log('data--------->', data);
-    window.log('end................');
+    console.log('start..............');
+    const data1 = await fetchData(1);
+    console.log('data1--------->', data1);
+    const data2 = await fetchData(2);
+    console.log('data2--------->', data2);
+    console.log('end................');
 }
 execute();
+console.log('the last.......')
